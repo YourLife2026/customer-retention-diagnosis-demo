@@ -3,137 +3,176 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#F7F4ED" />
-  <title>「顧客継続力」3分診断シート｜10問版デモ</title>
+  <title>「顧客継続力」3分診断シート｜忠実再現デモ</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 <main class="app">
 
-  <!-- PAGE 1 -->
-  <section class="page active" id="page-top">
-    <div class="page-inner hero-page">
-      <div class="topline">CUSTOMER RETENTION DIAGNOSTIC</div>
-
-      <div class="hero-visual">
-        <img src="hero-banner.png" alt="顧客継続力3分診断シート">
+  <!-- 1. TOP -->
+  <section class="screen active" id="top">
+    <div class="frame top-frame">
+      <div class="top-bg">
+        <div class="office-blur"></div>
+        <div class="laptop-shape"></div>
+        <div class="plant-shape"><i></i><i></i><i></i></div>
       </div>
 
-      <div class="hero-copy">
+      <div class="top-content">
+        <div class="top-kicker">CUSTOMER RETENTION DIAGNOSTIC</div>
         <h1>「顧客継続力」<br><span>3分診断シート</span></h1>
-        <h2>あなたの会社は、<br>なぜ顧客が離れる？</h2>
-        <p>10の質問から、<br>顧客との関係性と伸びしろを診断します。</p>
-      </div>
 
-      <div class="benefits">
-        <div class="benefit"><div class="icon">◷</div><b>約3分</b><span>で完了</span></div>
-        <div class="benefit"><div class="icon">▥</div><b>5つの軸</b><span>で可視化</span></div>
-        <div class="benefit"><div class="icon">✦</div><b>改善のヒント</b><span>が見つかる</span></div>
-      </div>
-
-      <button class="main-btn" data-go="page-question">今すぐ診断をはじめる <span>›</span></button>
-      <p class="microcopy">全10問｜無料｜スマホで完結</p>
-    </div>
-  </section>
-
-  <!-- PAGE 2 -->
-  <section class="page" id="page-question">
-    <div class="page-inner question-page">
-      <div class="question-head">
-        <div>
-          <div class="question-no">Q1 <span>/ 10</span></div>
-          <div class="axis-label">継続設計力</div>
+        <div class="top-question">
+          あなたの会社は、<br>
+          <strong>なぜ顧客が離れる？</strong>
         </div>
-        <div class="progress-dots" aria-label="進捗 1/10">
-          <i class="active"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-        </div>
-      </div>
 
-      <div class="question-illustration">
-        <div class="mini-card">
-          <div class="mini-icon">↻</div>
-          <div>
-            <span>継続設計力</span>
-            <b>“次に相談する理由”があるか</b>
+        <p class="top-lead">
+          10の質問で、<br>
+          課題と伸びしろがわかります。
+        </p>
+
+        <div class="feature-row">
+          <div class="feature-card">
+            <div class="circle-icon">◷</div>
+            <b>約3分</b><span>で完了</span>
+          </div>
+          <div class="feature-card">
+            <div class="circle-icon">▥</div>
+            <b>すぐに</b><span>結果がわかる</span>
+          </div>
+          <div class="feature-card">
+            <div class="circle-icon">♧</div>
+            <b>改善のヒント</b><span>が見つかる</span>
           </div>
         </div>
-      </div>
 
-      <h2 class="question-title">
-        商品・サービスを提供した“後”にも、<br>
-        お客様があなたに相談する<br>
-        <strong>「次の理由」</strong>が設計されていますか？
-      </h2>
+        <button class="cta teal" data-go="question">
+          今すぐ診断をはじめる <span>›</span>
+        </button>
 
-      <p class="question-help">
-        購入後の新しい課題や状況の変化に応じて、<br>
-        次の相談・提案・サポートへ自然につながる状態を指します。
-      </p>
-
-      <div class="answer-grid">
-        <button class="answer" data-score="4"><span class="radio"></span>できている</button>
-        <button class="answer" data-score="3"><span class="radio"></span>ある程度できている</button>
-        <button class="answer" data-score="1"><span class="radio"></span>あまりできていない</button>
-        <button class="answer" data-score="0"><span class="radio"></span>できていない</button>
-      </div>
-
-      <div class="nav-row">
-        <button class="sub-btn" data-go="page-top">‹ 戻る</button>
-        <button class="main-btn small" id="result-btn">デモ結果を見る <span>›</span></button>
+        <div class="brand-mark">
+          <span class="leaf">♨</span>YourLife
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- PAGE 3 -->
-  <section class="page" id="page-result">
-    <div class="page-inner result-page">
-      <div class="result-kicker">診断結果 <span>RESULT</span></div>
-
-      <div class="result-card">
-        <div class="result-badge">あなたのタイプは</div>
-        <div class="result-top">
-          <div class="result-icon">◎</div>
-          <div>
-            <div class="result-level">LEVEL 3</div>
-            <h1>伴走型</h1>
-            <p>顧客との関係性は強く、<br>継続的な価値提供ができています。</p>
+  <!-- 2. QUESTION -->
+  <section class="screen" id="question">
+    <div class="frame q-frame">
+      <div class="q-inner">
+        <div class="q-head">
+          <div class="q-number">Q1 <span>/ 10</span></div>
+          <div class="dots">
+            <i class="done"></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i>
           </div>
         </div>
 
-        <div class="divider"></div>
+        <h2>
+          商品・サービスを提供した“後”にも、<br>
+          お客様があなたに相談する<br>
+          <strong>「次の理由」</strong>が設計されていますか？
+        </h2>
 
-        <h3>このタイプの特徴</h3>
-        <ul class="check-list">
-          <li>顧客の状況を継続的に理解できている</li>
-          <li>購入後も複数回の価値提供ができている</li>
-          <li>一方で、自社だけでは提供できない領域が残りやすい</li>
-        </ul>
+        <p class="q-sub">
+          購入後の新しい課題や状況変化に応じて、<br>
+          次の相談・提案・サポートへ自然につながるかを確認します。
+        </p>
 
-        <div class="tip-box">
-          <div class="tip-label">改善のヒント</div>
-          <p>
-            既存顧客からよく相談される<br>
-            <strong>「自社では解決できない相談」</strong>を3つ書き出してみましょう。
-          </p>
+        <div class="answers">
+          <button class="answer" data-score="4"><span class="box"></span>できている</button>
+          <button class="answer" data-score="3"><span class="box"></span>ある程度できている</button>
+          <button class="answer" data-score="1"><span class="box"></span>あまりできていない</button>
+          <button class="answer" data-score="0"><span class="box"></span>できていない</button>
+        </div>
+
+        <div class="q-nav">
+          <button class="back" data-go="top">‹ 戻る</button>
+          <button class="cta teal compact" id="show-result">デモ結果を見る <span>›</span></button>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="type-row">
-        <div class="type-mini"><span>01</span><b>売り切り型</b></div>
-        <div class="type-mini"><span>02</span><b>フォロー型</b></div>
-        <div class="type-mini active"><span>03</span><b>伴走型</b></div>
-        <div class="type-mini gold"><span>04</span><b>顧問型</b></div>
+  <!-- 3. RESULT -->
+  <section class="screen" id="result">
+    <div class="frame result-frame">
+      <div class="result-bg">
+        <div class="result-frost"></div>
+        <div class="plant-side"><i></i><i></i><i></i></div>
       </div>
 
-      <div class="cta-wrap">
-        <img src="cta-banner.png" alt="90分オンライン特別講座">
-        <div class="cta-overlay">
-          <div class="cta-kicker">診断結果を踏まえて、次の一手へ</div>
-          <a href="#" class="cta-btn">90分オンライン特別講座を見る <span>›</span></a>
+      <div class="result-inner">
+        <div class="result-title">診断結果<span>RESULT</span></div>
+
+        <div class="main-result-card">
+          <div class="gold-pill">あなたのタイプは</div>
+
+          <div class="result-type-wrap">
+            <div class="result-people">
+              <div class="person p1"></div>
+              <div class="person p2"></div>
+              <div class="person p3"></div>
+            </div>
+            <div>
+              <div class="level">LEVEL 3</div>
+              <h1>伴走型</h1>
+              <p>顧客との関係性が強く、<br>継続的な価値提供ができています。</p>
+            </div>
+          </div>
+
+          <div class="rule"></div>
+
+          <h3>このタイプの特徴</h3>
+          <ul class="checks">
+            <li>顧客の状況を継続的に理解できている</li>
+            <li>購入後も複数回の価値提供ができている</li>
+            <li>自社だけでは解決できない領域が残りやすい</li>
+          </ul>
+
+          <div class="hint">
+            <div class="hint-title"><span>✦</span> 改善のヒント</div>
+            <p>
+              既存顧客からよく相談される<br>
+              <strong>「自社では解決できない相談」</strong>を3つ書き出してみましょう。
+            </p>
+          </div>
         </div>
-      </div>
 
-      <button class="sub-btn full" data-go="page-top">最初から見る</button>
+        <div class="type-strip">
+          <div class="type-card blue"><div class="type-icon">↗</div><b>売り切り型</b></div>
+          <div class="type-card aqua"><div class="type-icon">●●</div><b>フォロー型</b></div>
+          <div class="type-card green active"><div class="type-icon">◇</div><b>伴走型</b></div>
+          <div class="type-card gold"><div class="type-icon">♛</div><b>顧問型</b></div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-label">診断結果を次のステップへ</div>
+          <div class="course-content">
+            <div class="course-copy">
+              <h2><span>90分</span>オンライン特別講座</h2>
+              <p>
+                新規集客だけに頼らず売上を伸ばす！<br>
+                既存顧客の「使えるお金」を増やし、<br>
+                LTVを高める方法
+              </p>
+            </div>
+            <div class="speaker-illustration">
+              <div class="head"></div>
+              <div class="hair"></div>
+              <div class="body"></div>
+              <div class="tie"></div>
+            </div>
+          </div>
+          <a href="#" class="course-btn">詳細を見る・今すぐ申し込む <span>›</span></a>
+        </div>
+
+        <div class="brand-mark result-brand"><span class="leaf">♨</span>YourLife</div>
+
+        <button class="back full" data-go="top">最初から見る</button>
+      </div>
     </div>
   </section>
 
